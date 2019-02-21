@@ -23,7 +23,7 @@ require('./startup/prod')(app)
   }
 mongoose.connect(config.get('db'))
   .then(() => console.log('Connected to MongoDB...'+config.get('db')))
-  .catch(err => console.error('Could not connect to MongoDB...'));
+  .catch(err => console.error('Could not connect to MongoDB hello...'));
 
 app.use(express.json());
 app.use('/api/genres', genres);
